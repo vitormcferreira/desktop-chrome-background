@@ -30,12 +30,18 @@ Adicionar:
 
     /home/<user>/.config/dconf/user  IN_MODIFY       python3 /home/<user>/my-daemons/desktop-chrome-background/main.py
 
-Clonar o repositório para /home/\<user>/my-daemons/desktop-chrome-background/ de modo que main.py possa ser acessado como /home/\<user>/my-daemons/desktop-chrome-background/main.py
+Clonar o repositório para 
+`/home/\<user>/my-daemons/desktop-chrome-background/ `
+de modo que `main.py` possa ser acessado por 
+`/home/\<user>/my-daemons/desktop-chrome-background/main.py`
 
 > Nota: Trocar \<user> pelo nome de seu usuário.
+
+> Nota: Em `main.py` rocar o nome de usuário no caminho de BASE_GOOGLE_DIR e LOG_FILE_NAME 
+> para o seu nome de usuário
 
 ## Bugs
 
 - Ao transicionar entre os backgrounds de maneira rápida, o programa às vezes 
-  não acompanha, sendo preciso trocar novamente o background de uma maneira mais 
-  lenta.
+  não acompanha, sendo preciso trocar novamente o background de uma maneira 
+  mais lenta.
