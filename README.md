@@ -20,9 +20,7 @@ Executar:
 Adicionar:
 
     root
-    user
-
-Trocar user pelo nome de seu usuário.
+    <user>
 
 Executar:
     
@@ -30,6 +28,8 @@ Executar:
 
 Adicionar:
 
-    /home/vitor/.config/dconf/user  IN_MODIFY       python3 /home/vitor/my-daemons/desktop-chrome-background/main.py
+    /home/<user>/.config/dconf/user  IN_MODIFY       python3 /home/<user>/my-daemons/desktop-chrome-background/main.py
 
-Clonar o repositório para /home/vitor/my-daemons/desktop-chrome-background/ de modo que main.py possa ser acessado como /home/vitor/my-daemons/desktop-chrome-background/main.py
+Clonar o repositório para /home/\<user>/my-daemons/desktop-chrome-background/ de modo que main.py possa ser acessado como /home/\<user>/my-daemons/desktop-chrome-background/main.py
+
+> Nota: Trocar \<user> pelo nome de seu usuário.
