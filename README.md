@@ -22,4 +22,4 @@ Trocar user pelo nome de seu usuário.
 Executar:
     $ incrontab -e
 Adicionar:
-    /home/vitor/.config/dconf/user  IN_ATTRIB       python3 /home/vitor/my-daemons/desktop-chrome-background/main.py
+    /home/vitor/.config/dconf/user  IN_MODIFY       python3 /home/vitor/my-daemons/desktop-chrome-background/main.py
