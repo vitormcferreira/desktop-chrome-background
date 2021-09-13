@@ -33,3 +33,9 @@ Adicionar:
 Clonar o repositório para /home/\<user>/my-daemons/desktop-chrome-background/ de modo que main.py possa ser acessado como /home/\<user>/my-daemons/desktop-chrome-background/main.py
 
 > Nota: Trocar \<user> pelo nome de seu usuário.
+
+## Bugs
+
+- Ao transicionar entre os backgrounds de maneira rápida, o programa às vezes 
+  não acompanha, sendo preciso trocar novamente o background de uma maneira mais 
+  lenta.
