@@ -7,7 +7,7 @@ from PIL import Image
 
 
 BASE_GOOGLE_DIR = '/home/vitor/.config/google-chrome/Default/'
-LOG_FILE_NAME = '/home/vitor/.meus-logs.log'
+LOG_FILE_NAME = '/home/vitor/my-daemons/my-logs.log'
 
 
 def log_error(msg):
