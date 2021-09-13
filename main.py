@@ -20,13 +20,21 @@ def log_error(msg):
 
 
 def get_background_file_path():
+    # retorna o caminho da imagem no formato 'file:///path/to/image.ext'
     background_image_dconf_path = subprocess.run(
         ['gsettings', 'get', 'org.gnome.desktop.background', 'picture-uri'],
         capture_output=True,
         text=True
     ).stdout
+    
+    # remove as aspas e 'file://'
+    background_image_path = background_image_dconf_path[8:-2]
+    # escapa os caracteres %xx pelos seus equivalentes
+    # Por exemplo: espaços são substituídos por %xx em 
+    # background_image_dconf_path.
+    path = unquote(background_image_path)
 
-    return unquote(background_image_dconf_path[8:-2])
+    return path
 
 
 def convert_background_to_jpg(background_path):
